@@ -13,7 +13,7 @@ def ataque_pokemon(p1:Pokemon,p2:Pokemon):
 
 def historico_de_batalha():
     if(not historico_de_batalhas):
-        print("Você nunca batalhou")
+        print("Você nunca batalhou.")
         return
     
     for i in historico_de_batalhas:

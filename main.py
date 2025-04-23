@@ -6,7 +6,7 @@ import tkinter as tk
 
 def evoluir_pokemon():
     if(not meus_pokemons):
-        print("Você não tem pokemons")
+        print("Você não tem pokemons.")
         return []
 
     print("Escolha um pokémon para evoluir:")
@@ -24,7 +24,7 @@ def evoluir_pokemon():
 
 def escolha_batalha():
     if(not meus_pokemons):
-        print("Você precisa ter pokémons para batalhar")
+        print("Você não tem pokémons para batalhar.")
         return
     
     print("Escolha seu pokémon para batalha:")
@@ -55,11 +55,11 @@ def escolha_batalha():
             print("Escolha inválida.")
 
 
-    print("Escolha o pokémon que vai batalhar contra você.")
+    print("Escolha o pokémon que vai batalhar contra você:")
 
     while True:
         for i in range(len(todos_os_pokemons)):
-            print(f"{i+1}-",todos_os_pokemons[i].nome, f"nivel:{todos_os_pokemons[i].nivel}")
+            print(f"{i+1}-",todos_os_pokemons[i].nome, f"nível:{todos_os_pokemons[i].nivel}")
 
         escolha = int(input())
         if(escolha-1 < len(todos_os_pokemons)):

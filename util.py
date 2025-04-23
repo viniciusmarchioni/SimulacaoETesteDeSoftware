@@ -1,19 +1,6 @@
 from models import Pokemon, Tipos
 from data import todos_os_pokemons, meus_pokemons
 
-def escolher_pokemon(lista, mensagem="Escolha um pokémon:"):
-    print(mensagem)
-    for i, p in enumerate(lista):
-        print(f"{i+1} - {p.nome} nível: {p.nivel} HP: {p.vida_atual}")
-    while True:
-        try:
-            escolha = int(input())
-            if 1 <= escolha <= len(lista):
-                return lista[escolha - 1]
-        except:
-            pass
-        print("Escolha inválida.")
-
 def cadastrar_pokemon():
     nome = ""
     vida = 0
@@ -24,7 +11,7 @@ def cadastrar_pokemon():
         if(len(nome)<10):
             break
         else:
-            print("Nome não deve ultrapassar 10 caracteres")
+            print("Nome não deve ultrapassar 10 caracteres.")
     
     while True:
         try:
@@ -72,11 +59,11 @@ def capturar_pokemon():
             meus_pokemons.append(Pokemon(p.nome, p.vida, p.ataque, p.tipo, p.nivel))
             break
         else:
-            print("Valor inválido.")
+            print("Entrada inválida.")
 
 def exibir_pokemon():
     if not meus_pokemons:
-        print("Você não tem pokémons")
+        print("Você não tem pokémons.")
         return
     print("Lista de pokémons:")
     for p in meus_pokemons:
@@ -84,7 +71,7 @@ def exibir_pokemon():
 
 def reviver_pokemon():
     if(not meus_pokemons):
-        print("Você não tem pokemons")
+        print("Você não tem pokemons.")
         return []
     print("Selecione o pokémon para reviver:")
     for i in range(len(meus_pokemons)):
@@ -96,7 +83,7 @@ def reviver_pokemon():
             meus_pokemons[escolha - 1].reviver()
             break
         else:
-            print("Valor inválido")
+            print("Entrada inválida.")
 
 def tipoString(tipo:Tipos):
     if(tipo == Tipos.FOGO):

@@ -9,6 +9,6 @@ todos_os_pokemons = [
     Pokemon("Totodile", 10, 6, Tipos.AGUA, 0)
 ]
 
-meus_pokemons = [Pokemon("Charmander", 10, 6, Tipos.FOGO, 0)]
+meus_pokemons = []
 qtd_batalhas = 0
 historico_de_batalhas = []
