@@ -77,7 +77,7 @@ while True:
           MENU
     1- Capturar pokémon
     2- Exibir pokémons
-    3- Cadastrar pokémon
+    3- Criar pokémon
     4- Evoluir Pokémon
     5- Reviver pokémon
     6- Batalha
@@ -92,7 +92,7 @@ while True:
     elif(escolha==2):
         exibir_pokemon()
     elif(escolha==3):
-        cadastrar_pokemon()
+        criar_pokemon()
     elif(escolha==4):
         evoluir_pokemon()
     elif(escolha==5):

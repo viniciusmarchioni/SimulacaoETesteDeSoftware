@@ -1,7 +1,7 @@
 from models import Pokemon, Tipos
 from data import todos_os_pokemons, meus_pokemons
 
-def cadastrar_pokemon():
+def criar_pokemon():
     nome = ""
     vida = 0
     ataque = 0
