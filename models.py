@@ -22,8 +22,3 @@ class Pokemon:
     
     def reviver(self):
         self.vida_atual = self.vida
-
-todos_os_pokemons = [
-Pokemon("Charmander",10,6,Tipos.FOGO,0),
-Pokemon("Bubasauro",12,4,Tipos.PLANTA,0),
-]
